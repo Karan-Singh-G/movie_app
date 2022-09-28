@@ -1,0 +1,123 @@
+<html>
+
+<head>
+  <title>Booking page</title>
+</head>
+ <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      background-color: rgb(21, 19, 19);
+    }
+    #navbar{
+      /* border: 1px solid black; */
+      font-size: 20px;
+       display: flex;
+       flex-direction: column;
+    }
+    #navbar>div{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      font-size: 20px;
+      margin-top: 25px;
+    }
+    #navbar>h2{
+      width: fit-content;
+      margin: auto;
+      color: blue;
+    }
+    a{
+      text-decoration: none;
+      color: red;
+      /* border: 1px solid black; */
+      width: fit-content;
+      padding: 10px 15px;
+     
+    }
+    a:hover{
+      background-color: rgb(188, 188, 255);
+    }
+    #filter_h1{
+      display: flex;
+      width: 65%;
+     justify-content: space-around;
+     margin-top: 20px;
+    }
+    table{
+      /* border: 1px solid black; */
+      margin: auto;
+      margin-top: 35px;
+    }
+    td,th{
+    border: 1px solid black;
+    background-color: aliceblue;
+   
+   
+}
+table{
+    padding: 5px;
+}
+td,th{
+    padding: 10px 10px;
+}
+th{
+  background-color: yellow;
+  font-weight: bold;
+}
+#last_td{
+  background-color: rgb(11, 125, 11);
+  color: white;
+}
+#filter_h1>h1{
+  color: blue;
+}
+
+ </style>
+<body>
+  <div id="navbar">
+    <h2>Masai Multiplex</h2>
+    <div>
+      <a href="./index.html">
+        <h2>Home</h2>
+      </a>
+      <a href="./booking.html">
+        <h2>All Movies</h2>
+      </a>
+      <a href="./buy.html">
+        <h2>My Movies</h2>
+      </a>
+    </div>
+  </div>
+  <div id="filter_h1">
+    <select class="selected" id="filter">
+      <option value="">Select Category</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Action">Action</option>
+      <option value="Comedy">Comedy</option>
+    </select>
+    <h1>Current Movies:- <span id="movie-count">0</span></h1>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Main Actor</th>
+        <th>Description</th>
+        <th>Release Date</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Buy Ticket</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Append table rows here  -->
+    </tbody>
+  </table>
+</body>
+<script src="./Scripts/booking.js"></script>
+
+</html>
